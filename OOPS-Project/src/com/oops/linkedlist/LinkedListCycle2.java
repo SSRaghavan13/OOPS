@@ -18,8 +18,9 @@ public class LinkedListCycle2 {
 			}
 		}
 		if(isCycle) {
+			stepOne = head;
 			while(stepOne != stepTwo) {
-				stepOne = head.nextNode;
+				stepOne = stepOne.nextNode;
 				stepTwo = stepTwo.nextNode;
 			}
 			return stepOne;
