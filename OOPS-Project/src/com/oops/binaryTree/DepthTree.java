@@ -20,5 +20,4 @@ public class DepthTree {
 		int right_depth = maximum_depth(root.right);
 		return (Math.max(left_depth, right_depth) + 1);
 	}
-	//
 }
