@@ -24,4 +24,43 @@ public class InOrderSuccessor {
 		
 		return current;
 	}
+	
+	public TreeNode inOrder(TreeNode root, int data) {
+		if(root == null)
+			return root;
+		TreeNode successor = null;
+		TreeNode ancestor = root;
+		TreeNode current = searchBST(root, data);
+		if(current.right != null) {
+			TreeNode temp = current.right;
+			while(temp.left != null)
+				temp = temp.left;
+			return temp;
+		}
+		else {
+			while(ancestor != current) {
+				if(data < ancestor.val) {
+					successor = ancestor;
+					ancestor = ancestor.left;
+				}
+				else {
+					ancestor = ancestor.right;
+				}
+			}
+		}
+		return successor;
+	}
+	
+	public TreeNode searchBST(TreeNode root, int val) {
+		while(root != null) {
+			if(val == root.val)
+				return root;
+			else if(val < root.val)
+				root = root.left;
+			else if(val > root.val)
+				root = root.right;
+		}
+		return null;
+	}
+	
 }
