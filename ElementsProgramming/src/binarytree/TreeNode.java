@@ -1,4 +1,4 @@
-package bst;
+package binarytree;
 
 public class TreeNode {
     public int val;
@@ -7,6 +7,11 @@ public class TreeNode {
 
     TreeNode(int val) {
         this.val = val;
+    }
+
+    @Override
+    public String toString() {
+        return "Node data: " + this.val;
     }
 
 }

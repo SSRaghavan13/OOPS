@@ -1,4 +1,4 @@
-package bst;
+package binarytree;
 
 public class P1BalancedBST {
     public static boolean isBalanced(TreeNode root) {

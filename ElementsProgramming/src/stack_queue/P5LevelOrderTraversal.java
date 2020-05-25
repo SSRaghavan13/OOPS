@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-import bst.TreeNode;
+import binarytree.TreeNode;
 
 public class P5LevelOrderTraversal {
     public static List<List<Integer>> levelOrderTraversal(TreeNode root) {

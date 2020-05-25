@@ -1,4 +1,4 @@
-package bst;
+package binarytree;
 
 public class P2SymmetricTree {
     public static boolean isSymmetric(TreeNode root) {
