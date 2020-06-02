@@ -2,7 +2,7 @@ package linkedlist;
 
 public class P1ReverseLL {
 	
-	public static Node<Integer> reverseLinkedList(Node head) {
+	public static Node<Integer> reverseLinkedList(Node<Integer> head) {
 		Node<Integer> prev = null;
 		Node<Integer> curr = head;
 		Node<Integer> next;
