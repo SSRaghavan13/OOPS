@@ -4,7 +4,7 @@ public class Node<Type> {
 	public Type val;
 	public Node<Type> next;
 	
-	Node(Type val) {
+	public Node(Type val) {
 		this.val = val;
 	}
 	
